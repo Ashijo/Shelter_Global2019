@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - Background
   - Shadow
+  - Shelter
+  - CloseShelter
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Obstacle
   - Background
   - Shadow
-  - 
+  - Shelter
   - 
   - 
   - 

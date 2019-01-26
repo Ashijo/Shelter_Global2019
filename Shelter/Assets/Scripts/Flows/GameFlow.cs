@@ -15,12 +15,23 @@ public class GameFlow : Flow
 
     public override void InitializeFlow()
     {
-        Debug.Log("GameFlow start");
         MasterGameManager.Instance.Start();
     }
 
     public override void UpdateFlow(float _dt, InputParams _ip)
     {
+        if (_ip.EscapePressed)
+        {
+            SceneManager.InitToCall init = SwitchToMenu;
+            SceneManager.Instance.LoadScene(GV.SCENENAMES.MainMenu.ToString(), init);
+        }
+
         MasterGameManager.Instance.Update(_ip, _dt);
+    }
+
+    private void SwitchToMenu()
+    {
+        TimerManager.Instance.Init();
+        FlowManager.Instance.ChangeFlows(GV.SCENENAMES.MainMenu);
     }
 }

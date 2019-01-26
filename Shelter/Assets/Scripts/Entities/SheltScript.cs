@@ -19,5 +19,14 @@ public class SheltScript : MonoBehaviour
             myShelt.Turn();
             myShelt.rush = false;
         }
+
+        if (col.transform.CompareTag("Shelter"))
+        {
+            SheltManager.Instance.SaveMe(myShelt);
+            col.collider.isTrigger = true;
+            col.transform.tag = "CloseShelter";
+
+        }
+
     }
 }

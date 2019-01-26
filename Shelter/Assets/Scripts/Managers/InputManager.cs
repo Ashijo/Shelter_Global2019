@@ -32,8 +32,9 @@ public class InputManager {
         bool clickLeft = Input.GetMouseButton(0);
         bool clickLeftUp = Input.GetMouseButtonUp(0);
         bool spacePress = Input.GetKey(KeyCode.Space);
+        bool escapePress = Input.GetKey(KeyCode.Escape);
 
-        return new InputParams(mousePos, clickLeftDown, clickLeft, clickLeftUp, spacePress);
+        return new InputParams(mousePos, clickLeftDown, clickLeft, clickLeftUp, spacePress, escapePress);
 	}
 
 }
@@ -47,9 +48,9 @@ public class InputParams{
     public bool ClickLeft     { get; private set; }
     public bool ClickLeftUp   { get; private set; }
     public bool SpacePress    { get; private set; }
+    public bool EscapePressed { get; private set; }
 
-
-    public InputParams(Vector3 MousePos, bool ClickLeftDown, bool ClickLeft, bool ClickLeftUp, bool SpacePress)
+    public InputParams(Vector3 MousePos, bool ClickLeftDown, bool ClickLeft, bool ClickLeftUp, bool SpacePress, bool EscapePress)
     {
         Consumed = false;
 
@@ -58,6 +59,7 @@ public class InputParams{
         this.ClickLeft = ClickLeft;
         this.ClickLeftUp = ClickLeftUp;
         this.SpacePress = SpacePress;
+        this.EscapePressed = EscapePress;
     }
 
     public void Use() {

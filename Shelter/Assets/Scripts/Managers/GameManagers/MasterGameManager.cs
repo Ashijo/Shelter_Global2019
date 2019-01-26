@@ -35,28 +35,25 @@ public class MasterGameManager
         //Debug.Log("MasterGameManager start");
         TimerManager.Instance.InGame = true;
         SheltManager.Instance.Start();
+        EnvironmentManager.Instance.Start();
     }
 
     public void Update(InputParams _ip, float dt)
     {
         SheltManager.Instance.Update(_ip, dt);
+        EnvironmentManager.Instance.Update(_ip, dt);
+
 
         TimeStop = _ip.SpacePress;
         TimerManager.Instance.InGame = !TimeStop;
-        if (TimeStop)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
-        }
+        Time.timeScale = TimeStop ? 0 : 1;
 
     }
 
     public void FixedUpdate(float fdt)
     {
         SheltManager.Instance.FixedUpdate(fdt);
+        EnvironmentManager.Instance.FixedUpdate(fdt);
     }
 
 

@@ -8,7 +8,7 @@ public class Shelt
     private float lifePoint;
     private Color color;
     private bool direction = true;
-    private bool rush = false;
+    public bool rush = false;
     private Vector3 RushPos;
     private Vector3 BeginRushPos;
 
@@ -17,9 +17,10 @@ public class Shelt
     public Shelt(Vector3 position, string name, GameObject parent)
     {
         shelt = GameObject.Instantiate(Resources.Load("Prefabs/Shelt") as GameObject);
-        lifePoint = 10;
+        lifePoint = 10f;
         color = Color.green;
         shelt.transform.name = name;
+        shelt.transform.position = position;
         shelt.transform.SetParent(parent.transform);
         shelt.SetActive(false);
         shelt.AddComponent<SheltScript>();

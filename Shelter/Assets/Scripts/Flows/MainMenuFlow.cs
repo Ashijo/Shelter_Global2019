@@ -22,6 +22,10 @@ public class MainMenuFlow : Flow {
             SceneManager.Instance.LoadScene(GV.SCENENAMES.GameScene.ToString(), initFlow);
         }
 
+        if (_ip.EscapePressed)
+        {
+            Application.Quit();
+        }
     }
 
     private void SwitchToGame()

@@ -34,9 +34,12 @@ public class SheltManager
     private List<Shelt> shelts;
     private GameObject spawn;
     private GameObject MotherShelt;
-    private Shelt selectedOne = null;
+    private Shelt selectedOne;
     private Vector3 ShadowPosition;
     private GameObject Shadow;
+
+    public int SaveShelt;
+    public int DeadShelt;
 
     public void Start()
     {
@@ -58,6 +61,7 @@ public class SheltManager
         }
 
         TimerManager.Instance.AddTimer(this, sheltSpwanerTimer, TimerManager.Timebook.InGame);
+        SpawnWork();
     }
 
     #region SelectManagement
@@ -88,7 +92,6 @@ public class SheltManager
     }
     #endregion
 
-
     public void Update(InputParams _ip, float dt)
     {
 
@@ -98,8 +101,6 @@ public class SheltManager
             {
                 if (shelt.isActive)
                     shelt.Up(dt);
-                else
-                    break;
             }
         }
 
@@ -124,6 +125,30 @@ public class SheltManager
 
     public void FixedUpdate(float fdt)
     {
+    }
+
+    public void SaveMe(Shelt toSave)
+    {
+        SaveShelt++;
+        toSave.DeActivate();
+        CheckGameState();
+    }
+
+    public void KillMe(Shelt toKill)
+    {
+        DeadShelt++;
+        toKill.DeActivate();
+        CheckGameState();
+    }
+
+    private void CheckGameState()
+    {
+
+        if (SaveShelt + DeadShelt == GV.Instance.sheltToSpawn)
+        {
+            //TODO end game
+            Debug.Log("END GAME");
+        }
     }
 
     #region SpwanFunctions

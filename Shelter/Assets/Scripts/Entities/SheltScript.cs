@@ -17,6 +17,7 @@ public class SheltScript : MonoBehaviour
         {
             //Debug.Log("ShellCollid");
             myShelt.Turn();
+            myShelt.rush = false;
         }
     }
 }

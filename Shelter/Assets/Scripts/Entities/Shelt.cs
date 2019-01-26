@@ -39,7 +39,7 @@ public class Shelt
                 rush = false;
             }
 
-            if (shelt.transform.position.x.Near(BeginRushPos.x - .15f))
+            if (shelt.transform.position.x.Near(BeginRushPos.x, dt/10f))
             {
                 rush = false;
             }

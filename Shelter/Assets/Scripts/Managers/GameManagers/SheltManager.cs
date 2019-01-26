@@ -36,6 +36,7 @@ public class SheltManager
     private GameObject MotherShelt;
     private Shelt selectedOne = null;
     private Vector3 ShadowPosition;
+    private GameObject Shadow;
 
     public void Start()
     {
@@ -47,6 +48,8 @@ public class SheltManager
         MotherShelt.transform.name = "MotherShelt";
         spawnCall = new Timer.toCall(SpawnWork);
         sheltSpwanerTimer = new Timer(GV.Instance.timeBetwenSheltSpawn, spawnCall, true);
+        Shadow = GameObject.Instantiate(Resources.Load("Prefabs/Shadow") as GameObject);
+        Shadow.SetActive(false);
 
         for (int i = 0; i < GV.Instance.sheltToSpawn; i++)
         {
@@ -66,6 +69,10 @@ public class SheltManager
         {
             if(hit.collider.gameObject.transform.CompareTag("Shelt"))
                 selectedOne = hit.collider.gameObject.GetComponent<SheltScript>().myShelt;
+            if (selectedOne != null)
+            {
+                Shadow.SetActive(true);
+            }
         }
         
     }
@@ -74,6 +81,9 @@ public class SheltManager
     {
         ShadowPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         ShadowPosition.z = 0;
+       
+        selectedOne.RushTo(ShadowPosition);
+        Shadow.SetActive(false);
         selectedOne = null;
     }
     #endregion
@@ -93,13 +103,20 @@ public class SheltManager
             }
         }
 
+        if (Shadow.activeInHierarchy)
+        {
+            ShadowPosition = Camera.main.ScreenToWorldPoint(_ip.MousePos);
+            ShadowPosition.z = 0;
+            Shadow.transform.position = ShadowPosition;
+        }
+
         if (_ip.ClickLeftDown)
         {
             //Debug.Log("left click");
             TryToSelect(_ip.MousePos);
         }
 
-        if (_ip.ClickLeftUp)
+        if (_ip.ClickLeftUp && selectedOne != null)
         {
             Deselect();
         }

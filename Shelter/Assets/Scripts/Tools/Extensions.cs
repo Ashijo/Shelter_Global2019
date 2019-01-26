@@ -39,18 +39,15 @@ public static class Extensions {
     }
 
     /// <summary>
-    /// Sadly i cannot keep this one in a library, or, 
-    /// i must link this class with my utils one :/
-    /// Soon change to fit with a tupple system
     /// </summary>
     /// <typeparam name="K">Finally they would not be use</typeparam>
     /// <typeparam name="V">but i need this info here anyways</typeparam>
     /// <param name="list">the list to check</param>
     /// <returns>The number of KVPaire without any null elements</returns>
-    public static int GetCountNotNull<K, V>(this List<Utils.KVPaires<K, V>> list) {
+    public static int GetCountNotNull<K, V>(this List<Utils.Tuple<K, V>> list) {
         int count = 0;
         for (int i = 0; i < list.Count; i++) {
-            if (list[i].Key != null && list[i].Value != null) count++;
+            if (list[i].Value1 != null && list[i].Value2 != null) count++;
         }
 
         return count;

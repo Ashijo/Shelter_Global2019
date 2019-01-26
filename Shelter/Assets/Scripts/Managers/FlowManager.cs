@@ -59,6 +59,9 @@ public class FlowManager {
             case GV.SCENENAMES.MainMenu:
                 flow = new MainMenuFlow();
                 break;
+            case GV.SCENENAMES.GameScene:
+                flow = new GameFlow();
+                break;
             default:
                 flow = null;
                 break;

@@ -15,5 +15,11 @@ public class MainMenuFlow : Flow {
     }
 
     public override void UpdateFlow(float _dt, InputParams _ip) {
+
+        if (_ip.SpacePress)
+        {
+            SceneManager.Instance.LoadScene(GV.SCENENAMES.GameScene.ToString());
+        }
+
     }
 }

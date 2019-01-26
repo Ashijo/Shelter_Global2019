@@ -119,12 +119,12 @@ public class TimerManager {
 
     /// <summary>
     /// Best way is to init your timer in the start, then add it when you need it
-    /// But if you want creat and add in the same time, you can use it
+    /// But if you want create and add in the same time, you can use it
     /// </summary>
-    /// <param name="from"> Alwayse "this"</param>
+    /// <param name="from"> Always "this"</param>
     /// <param name="timebook">
     /// Choose the timebook :
-    /// Global -> Alwayse update
+    /// Global -> Always update
     /// Game -> update only in Game
     /// Menu -> update only in menu
     /// <returns>The Chronos just created</returns>

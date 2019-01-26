@@ -26,7 +26,7 @@ public class GV {
     public static WS ws;
 
     // GLOBAL VARIABLES
-    public enum SCENENAMES { DUMMY, MainMenu, StartScene}
+    public enum SCENENAMES { DUMMY, MainMenu, StartScene, GameScene}
    
 
 }

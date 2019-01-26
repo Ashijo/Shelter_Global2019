@@ -34,6 +34,8 @@ public class SheltManager
     private List<Shelt> shelts;
     private GameObject spawn;
     private GameObject MotherShelt;
+    private Shelt selectedOne = null;
+    private Vector3 ShadowPosition;
 
     public void Start()
     {
@@ -55,14 +57,51 @@ public class SheltManager
         TimerManager.Instance.AddTimer(this, sheltSpwanerTimer, TimerManager.Timebook.InGame);
     }
 
+    #region SelectManagement
+    private void TryToSelect(Vector3 mousePos)
+    {
+
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if (hit.collider != null)
+        {
+            if(hit.collider.gameObject.transform.CompareTag("Shelt"))
+                selectedOne = hit.collider.gameObject.GetComponent<SheltScript>().myShelt;
+        }
+        
+    }
+
+    private void Deselect()
+    {
+        ShadowPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        ShadowPosition.z = 0;
+        selectedOne = null;
+    }
+    #endregion
+
+
     public void Update(InputParams _ip, float dt)
     {
-        foreach (Shelt shelt in shelts)
+
+        if (!MasterGameManager.Instance.TimeStop)
         {
-            if(shelt.isActive)
-                shelt.Up(dt);
-            else
-                break;
+            foreach (Shelt shelt in shelts)
+            {
+                if (shelt.isActive)
+                    shelt.Up(dt);
+                else
+                    break;
+            }
+        }
+
+        if (_ip.ClickLeftDown)
+        {
+            //Debug.Log("left click");
+            TryToSelect(_ip.MousePos);
+        }
+
+        if (_ip.ClickLeftUp)
+        {
+            Deselect();
         }
     }
 

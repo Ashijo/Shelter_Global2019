@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Extensions {
+public static class Extensions
+{
 
     /// <summary>
     /// return true if the difference between a & b < epsilon
@@ -12,26 +13,26 @@ public static class Extensions {
     /// <param name="b">number to check</param>
     /// <param name="epsilon">the accept difference between a & b</param>
     /// <returns></returns>
-    public static bool Near(this float a, float b, float epsilon = .1f) {
-        bool backer = false;
+    public static bool Near(this float a, float b, float epsilon = .1f)
+    {
+        return (a + epsilon > b && a - epsilon < b);
 
-        if (a + epsilon > b && a - epsilon < b) {
-            backer = true;
-        }
-
-        return backer;
     }
 
-    public static bool Near(this Vector3 a, Vector3 b, float epsilon = .1f) {
+    public static bool Near(this Vector3 a, Vector3 b, float epsilon = .1f)
+    {
         bool backer = true;
 
-        if (a.x + epsilon < b.x || a.x - epsilon > b.x) {
+        if (a.x + epsilon < b.x || a.x - epsilon > b.x)
+        {
             backer = false;
         }
-        else if (a.y + epsilon < b.y || a.y - epsilon > b.y) {
+        else if (a.y + epsilon < b.y || a.y - epsilon > b.y)
+        {
             backer = false;
         }
-        else if (a.z + epsilon < b.z || a.z - epsilon > b.z) {
+        else if (a.z + epsilon < b.z || a.z - epsilon > b.z)
+        {
             backer = false;
         }
 

@@ -4,7 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class WS : MonoBehaviour {
+public class WS : MonoBehaviour
+{
+    public Sprite[] idle;
+    public Sprite[] fall;
+    public Sprite[] move;
+    public Sprite[] recover;
+    public Sprite[] shadow;
 
 }
 

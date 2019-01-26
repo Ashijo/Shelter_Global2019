@@ -1,7 +1,23 @@
 fileFormatVersion: 2
 guid: 1357f04566ed6854a938b5deacc2bb6f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Smove_0
+    21300002: Smove_1
+    21300004: Smove_2
+    21300006: Smove_3
+    21300008: Smove_4
+    21300010: Smove_5
+    21300012: Smove_6
+    21300014: Smove_7
+    21300016: Smove_8
+    21300018: Smove_9
+    21300020: Smove_10
+    21300022: Smove_11
+    21300024: Smove_12
+    21300026: Smove_13
+    21300028: Smove_14
+    21300030: Smove_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +85,340 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Smove_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9705335bd2ded94dacd087518f0863c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba407fb05b8d7a141abde52ad81e2908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fbe70b5a427194290dc125fc2c5f90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388fdac38d6ffc14c836cb678c2e7cf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f41cb2c0242f4ab8c2ba5a50be619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7845324be01134795679624adf799e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108255ca6bc6ba941968f8a5ca8de44d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0eb7bfc706b4b479e8ccbe5ae27a5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16b3a156a9ef9449b39bc1758c95a0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81845cbd4bf0a1541b226272af6a121c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8ac16b6f1e88d428370b684634edd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c7d4bb899e9c0459a4fca2ddd2cbf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fc61ad1c70c7c4091433de607ef3ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685a89c02f86c1c409e50ffbe141f3c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d85350ba0fdcf4a9d86dd90ce80545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smove_15
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d1a1b2dfcb28b4eb29d36477009475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

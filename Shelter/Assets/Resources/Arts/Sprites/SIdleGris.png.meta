@@ -1,7 +1,23 @@
 fileFormatVersion: 2
 guid: de540874a37a5824183037e6faa09901
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SIdleGris_0
+    21300002: SIdleGris_1
+    21300004: SIdleGris_2
+    21300006: SIdleGris_3
+    21300008: SIdleGris_4
+    21300010: SIdleGris_5
+    21300012: SIdleGris_6
+    21300014: SIdleGris_7
+    21300016: SIdleGris_8
+    21300018: SIdleGris_9
+    21300020: SIdleGris_10
+    21300022: SIdleGris_11
+    21300024: SIdleGris_12
+    21300026: SIdleGris_13
+    21300028: SIdleGris_14
+    21300030: SIdleGris_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +85,340 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SIdleGris_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba3993f9a0816c4ba2c3c9667a81f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d268f9d5adf6ae7408880a38bc32d1e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558a22198aacac340bedf33eef6c5235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf93ce7b1e0f3d5409b54a83f5932d43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d68589ec77cf149bb9b96713ce666a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76e510b910588e41a9a48107bbbb514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1acaf60ba00b6944a5f53f16b2ef1b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46ee1eb1b0e8214f8fcebaedc6235a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f146b464a28bf945b73bee71e33ef08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bb189834a34eb4697399362caf06f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b67aaa6d40b2bb428ba68c1ecae30ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e907ff84dc200824e89fd5cb643ef66f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0890af2da6ea99f41a3b15ec45958e25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a636eed3b857bf94dacfb6059cf45f84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13557ff591e76bb47813acff6a21303d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdleGris_15
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e362acfdb7751f4478734f9c8ba9334c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

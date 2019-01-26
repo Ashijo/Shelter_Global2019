@@ -31,6 +31,8 @@ public class GV {
     public readonly int timeBetwenSheltSpawn = 5;
     public readonly int sheltToSpawn = 20;
     public readonly float SheltNormalSpeed = 1f;
-    public readonly float SheltMaxSpeed = 1.5f;
+    public readonly float SheltMaxSpeed = 2f;
 
+    public readonly float timeBetwenSprt = (1f / 14f);
+    public readonly float timeBetwenRushSprt = (1f / 26f);
 }

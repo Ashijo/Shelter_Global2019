@@ -37,13 +37,16 @@ public class SheltManager
     private Shelt selectedOne;
     private Vector3 ShadowPosition;
     private GameObject Shadow;
+    private float shadowSwitch;
+
 
     public int SaveShelt;
     public int DeadShelt;
 
+    private int shadowCurs;
+
     public void Start()
     {
-        //Debug.Log("SheltManager start");
 
         shelts = new List<Shelt>();
         spawn = GameObject.Find("Spawn");
@@ -109,6 +112,16 @@ public class SheltManager
             ShadowPosition = Camera.main.ScreenToWorldPoint(_ip.MousePos);
             ShadowPosition.z = 0;
             Shadow.transform.position = ShadowPosition;
+
+            shadowSwitch += dt;
+
+            if (shadowSwitch > GV.Instance.timeBetwenSprt)
+            {
+                shadowSwitch = 0;
+                shadowCurs = shadowCurs % GV.ws.shadow.Length;
+                Shadow.GetComponent<SpriteRenderer>().sprite = GV.ws.shadow[shadowCurs];
+                shadowCurs++;
+            }
         }
 
         if (_ip.ClickLeftDown)

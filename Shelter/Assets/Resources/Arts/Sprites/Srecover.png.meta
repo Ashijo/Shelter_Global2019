@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 7195c6885a01dcf438ce60f7e5ea07c6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Srecover_0
+    21300002: Srecover_1
+    21300004: Srecover_2
+    21300006: Srecover_3
+    21300008: Srecover_4
+    21300010: Srecover_5
+    21300012: Srecover_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +47,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +76,160 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Srecover_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b874171f0a684464fbd7d32b0dbccf84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c490484ff95cca645b075c4d3c21ccc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e0e7d280317804ba9f7e39e81246f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf74e9ae07bfca48befb8b73b4387dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e68f8cf9042522458e35c80b580b1e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928b1d52e7c1caf4f9a167923821ac52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Srecover_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e8622b850151647a01c4b1eb577f18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

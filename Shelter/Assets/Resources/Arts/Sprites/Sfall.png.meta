@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: d49a4f437e24baf46a8a0f79936afd04
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Sfall_0
+    21300002: Sfall_1
+    21300004: Sfall_2
+    21300006: Sfall_3
+    21300008: Sfall_4
+    21300010: Sfall_5
+    21300012: Sfall_6
+    21300014: Sfall_7
+    21300016: Sfall_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +78,200 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sfall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64787057820d73841b10ad850cbbede3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df314a7372e98d24f850a8e111e9d097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5c9bb30622e744b80ef21c10d3e372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97132e84eb2d8c34fbe3fc1e5f6219f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d3552096036c04fb6f3ad81da6f20a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067172b4e85738841ba88154b60f085d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb977c89a777f044bca5cda882eb13b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae27d6f891d180f4db3e549ca5dd5bf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sfall_8
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628b00ca1862a224486052d986a56f82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

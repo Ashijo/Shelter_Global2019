@@ -25,8 +25,8 @@ public class SheltScript : MonoBehaviour
             SheltManager.Instance.SaveMe(myShelt);
             col.collider.isTrigger = true;
             col.transform.tag = "CloseShelter";
-
         }
-
     }
+
+    
 }

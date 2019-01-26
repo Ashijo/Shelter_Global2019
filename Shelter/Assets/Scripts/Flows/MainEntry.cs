@@ -17,6 +17,8 @@ public class MainEntry : MonoBehaviour {
         gameObject.AddComponent<FPSDisplay>();
 #endif
 
+        GV.ws = gameObject.GetComponent<WS>();
+
         try {
             FlowManager.Instance.InitializeFlowManager(
                 (GV.SCENENAMES)System.Enum.Parse(

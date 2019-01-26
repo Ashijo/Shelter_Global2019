@@ -1,7 +1,23 @@
 fileFormatVersion: 2
 guid: f04e74d0492b96b4c9759138ec33eda9
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: SIdle_0
+    21300002: SIdle_1
+    21300004: SIdle_2
+    21300006: SIdle_3
+    21300008: SIdle_4
+    21300010: SIdle_5
+    21300012: SIdle_6
+    21300014: SIdle_7
+    21300016: SIdle_8
+    21300018: SIdle_9
+    21300020: SIdle_10
+    21300022: SIdle_11
+    21300024: SIdle_12
+    21300026: SIdle_13
+    21300028: SIdle_14
+    21300030: SIdle_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +85,340 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ac2fd3a1e5e5f4da5b98e226931b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a8f8c223552be4cb72ebbf1ddb92bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6e149857dfc9a4db6c489ef49c8cce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 339.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940fece6f8d357e4a8b4cbfd05528d2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7030325abafbbd4096034443d6e4f38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee8bfeef1a3a734eb4c617b238cada5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1528e1f8dfb00846ab0fe9928be551c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 226.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d4d4d5e83a5ea4c9c7a3b06206f18b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1611afa20965533438e33a0465469c96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_9
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036039cd2deabbf40939c80cdb9da6ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ca7710918e86442980a8a7e07371e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 113.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143d777d4c657c64cabd226f0e2c6ddc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527a84356af90ea4582debda66f1efd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb291cee56ac4b64fb380faff0c55f5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bb37d6685e3a34c98936d19d434128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SIdle_15
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0.75
+        width: 113.25
+        height: 113.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70d2e6448cb98443a6e8a7976f5a99a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

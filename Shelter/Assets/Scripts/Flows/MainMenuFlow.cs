@@ -18,8 +18,14 @@ public class MainMenuFlow : Flow {
 
         if (_ip.SpacePress)
         {
-            SceneManager.Instance.LoadScene(GV.SCENENAMES.GameScene.ToString());
+            SceneManager.InitToCall initFlow = SwitchToGame;
+            SceneManager.Instance.LoadScene(GV.SCENENAMES.GameScene.ToString(), initFlow);
         }
 
+    }
+
+    private void SwitchToGame()
+    {
+        FlowManager.Instance.ChangeFlows(GV.SCENENAMES.GameScene);
     }
 }

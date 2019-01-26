@@ -46,6 +46,7 @@ public class SceneManager {
     private void DelegateCaller(Scene scene, LoadSceneMode load) {
         if(onSceneLoadedDelegate != null)
             onSceneLoadedDelegate.Invoke();
+
     }
 
 

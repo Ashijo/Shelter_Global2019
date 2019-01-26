@@ -10,13 +10,17 @@ public class GameFlow : Flow
 
     public override void FixedUpdateFlow(float _fdt)
     {
+        MasterGameManager.Instance.FixedUpdate(_fdt);
     }
 
     public override void InitializeFlow()
     {
+        Debug.Log("GameFlow start");
+        MasterGameManager.Instance.Start();
     }
 
     public override void UpdateFlow(float _dt, InputParams _ip)
     {
+        MasterGameManager.Instance.Update(_ip, _dt);
     }
 }

@@ -28,5 +28,9 @@ public class GV {
     // GLOBAL VARIABLES
     public enum SCENENAMES { DUMMY, MainMenu, StartScene, GameScene}
    
+    public readonly int timeBetwenSheltSpawn = 5;
+    public readonly int sheltToSpawn = 20;
+    public readonly float SheltNormalSpeed = 1f;
+    public readonly float SheltMaxSpeed = 1.5f;
 
 }

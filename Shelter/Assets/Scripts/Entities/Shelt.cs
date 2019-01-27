@@ -17,6 +17,9 @@ public class Shelt
     public bool onFallOut = false;
     public bool onFallOutFirst = false;
 
+    private bool Explode = false;
+    private bool ExplodeTrigger = true;
+
     private int spriteCurs;
     private float timeSinceLastSprt;
 
@@ -40,11 +43,38 @@ public class Shelt
 
     public void Up(float dt)
     {
+        if (Explode)
+        {
+            if (ExplodeTrigger)
+            {
+                ExplodeTrigger = false;
+                timeSinceLastSprt = 0;
+                spriteCurs = 0;
+            }
+
+            timeSinceLastSprt += dt;
+            if (timeSinceLastSprt >= GV.Instance.timeBetwenRushSprt)
+            {
+                timeSinceLastSprt = 0;
+
+                shelt.GetComponent<SpriteRenderer>().sprite = GV.ws.die[spriteCurs];
+                spriteCurs++;
+            }
+
+            if (spriteCurs >= GV.ws.die.Length)
+            {
+                SheltManager.Instance.KillMe(this);
+                DeActivate();
+            }
+            return;
+        }
+
         Vector3 pos = shelt.transform.position;
 
         if (pos.y < -6f)
         {
             SheltManager.Instance.KillMe(this);
+            DeActivate();
             return;
         }
 
@@ -69,7 +99,7 @@ public class Shelt
             CheckLife();
         }
 
-        if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -0.5f))
+        if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -1f))
         {
             onFallOut = true;
             onFallEnter = true;
@@ -77,7 +107,7 @@ public class Shelt
             onFallOutFirst = true;
         }
         else
-            fall = shelt.GetComponent<Rigidbody2D>().velocity.y < -0.5f;
+            fall = shelt.GetComponent<Rigidbody2D>().velocity.y < -1f;
 
         timeSinceLastSprt += dt;
 
@@ -146,7 +176,7 @@ public class Shelt
 
     private void IDie()
     {
-        SheltManager.Instance.KillMe(this);
+        Explode = true;
     }
 
     public void RushTo(Vector3 position)

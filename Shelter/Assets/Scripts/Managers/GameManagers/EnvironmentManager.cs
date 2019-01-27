@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -71,13 +72,23 @@ public class EnvironmentManager
         {
             foreach (Shelt shelt in SheltManager.Instance.shelts)
             {
-                if(shelt.isActive)
-                    shelt.looseHP = CheckCollision(shelt, waterRegister[i]);
+                try
+                {
+                    if (shelt.isActive && waterRegister[i] != null &&waterRegister[i].activeInHierarchy)
+                        shelt.looseHP = CheckCollision(shelt, waterRegister[i]);
+                }
+                catch (Exception e)
+                {
+                    Debug.Log(e.ToString());
+                }
             }
-            if (waterRegister[i].transform.position.y < -6f)
+            if (waterRegister[i] == null || waterRegister[i].transform.position.y < -6f)
             {
+                if(waterRegister[i]!= null)
+                    GameObject.Destroy(waterRegister[i]);
+
                 waterRegister.Remove(waterRegister[i]);
-                GameObject.Destroy(waterRegister[i]);
+
             }
         }
     }

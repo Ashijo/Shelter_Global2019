@@ -47,6 +47,7 @@ public class MasterGameManager
         SoundManager.Instance.PlayMusic();
         TimerManager.Instance.InGame = true;
         SheltManager.Instance.Start();
+        SheltManager.Instance.Reset();
 
         EnvironmentManager.Instance.Start();
     }

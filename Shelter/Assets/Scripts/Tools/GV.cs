@@ -29,7 +29,7 @@ public class GV {
     public enum SCENENAMES { DUMMY, MainMenu, StartScene, GameScene}
    
     public readonly int timeBetwenSheltSpawn = 3;
-    public readonly int sheltToSpawn = 12;
+    public readonly int sheltToSpawn = 15;
     public readonly float SheltNormalSpeed = 1f;
     public readonly float SheltMaxSpeed = 2f;
 
@@ -39,7 +39,7 @@ public class GV {
     public readonly float deathSpeed = 20.0f;
     public readonly int SheltToSave = 8;
 
-    public readonly float CamSpeed = .1f;
+    public readonly float CamSpeed = .2f;
     public readonly float MaxXposCam = 20f;
 
     public readonly float jumpForce = 4;

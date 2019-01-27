@@ -191,6 +191,11 @@ public class SheltManager
         }
     }
 
+    public void Reset()
+    {
+        SaveShelt = 0;
+    }
+
     #region SpwanFunctions
     private void SpawnWork()
     {

@@ -40,7 +40,7 @@ public class GV {
     public readonly int SheltToSave = 8;
 
     public readonly float CamSpeed = 8f;
-    public readonly float MaxXposCam = 10f;
+    public readonly float MaxXposCam = 20f;
 
     public readonly float jumpForce = 4;
 

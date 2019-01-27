@@ -91,14 +91,14 @@ public class MasterGameManager
             if (_ip.APress && Camera.main.transform.position.x > 0)
             {
                 camPos = Camera.main.transform.position;
-                camPos.x -= dt * GV.Instance.CamSpeed;
+                camPos.x -= GV.Instance.CamSpeed;
                 Camera.main.transform.position = camPos;
             }
 
             if (_ip.DPress && Camera.main.transform.position.x < GV.Instance.MaxXposCam)
             {
                 camPos = Camera.main.transform.position;
-                camPos.x += dt * GV.Instance.CamSpeed;
+                camPos.x += GV.Instance.CamSpeed;
                 Camera.main.transform.position = camPos;
             }
         }

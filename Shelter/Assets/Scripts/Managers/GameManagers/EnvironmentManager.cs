@@ -34,8 +34,14 @@ public class EnvironmentManager
     private List<GameObject> waterRegister;
     private List<ShelterScript> shelters;
     private GameObject WaterMother;
+
+    private List<Timer> waterDestroyer;
+    private Timer.toCall wrapper;
+
     public void Start()
     {
+        wrapper = DeRegister;
+        waterDestroyer = new List<Timer>();
         waterRegister = new List<GameObject>();
         waterSpawners = new List<GameObject>();
 
@@ -46,12 +52,23 @@ public class EnvironmentManager
         
     }
 
+    public void DeRegister()
+    {
+        waterRegister[0].SetActive(false);
+        GameObject.Destroy(waterRegister[0]);
+        waterRegister.RemoveAt(0);
+        waterDestroyer.RemoveAt(0);
+    }
+
     public void GenerateWater(Vector3 pos)
     {
 
         GameObject newWater = GameObject.Instantiate(Resources.Load("Prefabs/Water") as GameObject);
         newWater.transform.position = pos;
         waterRegister.Add(newWater);
+
+        waterDestroyer.Add(new Timer(10f, wrapper));
+        TimerManager.Instance.AddTimer(this, waterDestroyer[waterDestroyer.Count -1], TimerManager.Timebook.InGame);
 
         if (WaterMother == null)
         {
@@ -98,6 +115,8 @@ public class EnvironmentManager
                     GameObject.Destroy(waterRegister[i]);
 
                 waterRegister.Remove(waterRegister[i]);
+                waterDestroyer[0].Kill();
+                waterDestroyer.RemoveAt(0);
 
             }
         }

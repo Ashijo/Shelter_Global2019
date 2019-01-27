@@ -224,6 +224,18 @@ MonoBehaviour:
   - {fileID: 21300026, guid: de540874a37a5824183037e6faa09901, type: 3}
   - {fileID: 21300028, guid: de540874a37a5824183037e6faa09901, type: 3}
   - {fileID: 21300030, guid: de540874a37a5824183037e6faa09901, type: 3}
+  die:
+  - {fileID: 21300000, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300002, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300004, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300006, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300008, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300010, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300012, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300014, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300016, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300018, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  - {fileID: 21300020, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
 --- !u!114 &160006723
 MonoBehaviour:
   m_ObjectHideFlags: 0

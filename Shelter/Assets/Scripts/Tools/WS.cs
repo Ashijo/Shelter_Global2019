@@ -11,6 +11,7 @@ public class WS : MonoBehaviour
     public Sprite[] move;
     public Sprite[] recover;
     public Sprite[] shadow;
+    public Sprite[] die;
 
 }
 

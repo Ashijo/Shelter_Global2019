@@ -20,6 +20,8 @@ public class Shelt
     private int spriteCurs;
     private float timeSinceLastSprt;
 
+    public bool looseHP = false;
+
     public bool isActive { get; private set; }
 
     public Shelt(Vector3 position, string name, GameObject parent)
@@ -33,6 +35,7 @@ public class Shelt
         shelt.SetActive(false);
         shelt.AddComponent<SheltScript>();
         shelt.GetComponent<SheltScript>().Init(this);
+        color = Color.white;
     }
 
     public void Up(float dt)
@@ -49,6 +52,11 @@ public class Shelt
             }
         }
 
+        if (looseHP)
+        {
+            lifePoint -= dt * GV.Instance.deathSpeed;
+            CheckLife();
+        }
 
         if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -0.1f))
         {
@@ -102,10 +110,31 @@ public class Shelt
             spriteCurs = spriteCurs % GV.ws.move.Length;
             shelt.GetComponent<SpriteRenderer>().sprite = GV.ws.move[spriteCurs];
             }
-
-
-
         }
+    }
+
+    private void CheckLife()
+    {
+        if (lifePoint <= 0)
+        {
+            IDie();
+            return;
+        }
+
+        if (lifePoint >= 5)
+        {
+            color.b = (lifePoint - 5f) / 5f;
+        }
+        else
+        {
+            color.g = lifePoint / 5f;
+        }
+
+        shelt.GetComponent<SpriteRenderer>().color = color;
+    }
+
+    private void IDie()
+    {
     }
 
     public void RushTo(Vector3 position)

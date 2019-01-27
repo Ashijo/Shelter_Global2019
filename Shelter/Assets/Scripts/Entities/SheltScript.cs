@@ -6,9 +6,14 @@ public class SheltScript : MonoBehaviour
 {
     public Shelt myShelt { get; private set; }
 
+    void Start()
+    {
+    }
+
     public void Init(Shelt shelt)
     {
         myShelt = shelt;
+        gameObject.transform.tag = "Shelt";
     }
 
     void OnCollisionEnter2D(Collision2D col)

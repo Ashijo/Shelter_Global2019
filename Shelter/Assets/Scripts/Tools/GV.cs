@@ -35,4 +35,6 @@ public class GV {
 
     public readonly float timeBetwenSprt = (1f / 14f);
     public readonly float timeBetwenRushSprt = (1f / 26f);
+
+    public readonly float deathSpeed = 1f;
 }

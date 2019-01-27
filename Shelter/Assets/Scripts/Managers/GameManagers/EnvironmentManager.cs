@@ -28,9 +28,21 @@ public class EnvironmentManager
 
     #endregion
 
+    private List<GameObject> waterSpawners;
+    private List<GameObject> waterRegister;
     public void Start()
     {
+        waterSpawners = new List<GameObject>();
+
+        foreach (GameObject spawner in GameObject.FindGameObjectsWithTag("WaterSpawner"))
+        {
+            waterSpawners.Add(spawner);
+        }
         
+    }
+
+    public void GenerateWater(Vector3 pos)
+    {
     }
 
     // Update is called once per frame

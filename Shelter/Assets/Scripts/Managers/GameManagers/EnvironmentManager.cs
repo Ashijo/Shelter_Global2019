@@ -47,6 +47,7 @@ public class EnvironmentManager
 
     public void GenerateWater(Vector3 pos)
     {
+
         GameObject newWater = GameObject.Instantiate(Resources.Load("Prefabs/Water") as GameObject);
         newWater.transform.position = pos;
         waterRegister.Add(newWater);

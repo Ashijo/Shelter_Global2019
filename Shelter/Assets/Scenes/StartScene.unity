@@ -236,6 +236,12 @@ MonoBehaviour:
   - {fileID: 21300016, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
   - {fileID: 21300018, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
   - {fileID: 21300020, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  winScreen:
+  - {fileID: 21300000, guid: 45f8e96479f7e174782df63f3a99ef8c, type: 3}
+  - {fileID: 21300000, guid: 19b33abb314b54642a1e39c49a29eaf6, type: 3}
+  looseScreen:
+  - {fileID: 21300000, guid: cad9b81748678304e90e82045fe2ba22, type: 3}
+  - {fileID: 21300000, guid: 7d89313c0eb995b4cbe8663bf28ef5c9, type: 3}
 --- !u!114 &160006723
 MonoBehaviour:
   m_ObjectHideFlags: 0

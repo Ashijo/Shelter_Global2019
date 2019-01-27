@@ -47,7 +47,7 @@ public class SheltManager
 
     public void Start()
     {
-
+        spawned = 0;
         shelts = new List<Shelt>();
         spawn = GameObject.Find("Spawn");
         MotherShelt = new GameObject();
@@ -159,11 +159,7 @@ public class SheltManager
 
         if (SaveShelt + DeadShelt == GV.Instance.sheltToSpawn)
         {
-            if (SaveShelt >= GV.Instance.SheltToSave)
-            {
-                //TODO GoodEnding
-            }
-            //TODO bad ending
+            MasterGameManager.Instance.EndGame(SaveShelt >= GV.Instance.SheltToSave);
         }
     }
 

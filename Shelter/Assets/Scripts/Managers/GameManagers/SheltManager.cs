@@ -181,6 +181,9 @@ public class SheltManager
 
     private void CheckGameState()
     {
+        if(SaveShelt >= GV.Instance.SheltToSave)
+            MasterGameManager.Instance.EndGame(true);
+
 
         if (SaveShelt + DeadShelt == GV.Instance.sheltToSpawn)
         {

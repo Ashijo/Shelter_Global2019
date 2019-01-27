@@ -44,6 +44,7 @@ public class MasterGameManager
         //Debug.Log("MasterGameManager start");
         endImg = GameObject.Find("EndImg");
         endImg.SetActive(false);
+        SoundManager.Instance.PlayMusic();
         TimerManager.Instance.InGame = true;
         SheltManager.Instance.Start();
 
@@ -69,6 +70,8 @@ public class MasterGameManager
 
         if (endGame)
         {
+            SoundManager.Instance.StopMusic();
+            EnvironmentManager.Instance.Finish();
             Time.timeScale = 1;
             endImg.SetActive(true);
             timeSinceLastSwitch += dt;

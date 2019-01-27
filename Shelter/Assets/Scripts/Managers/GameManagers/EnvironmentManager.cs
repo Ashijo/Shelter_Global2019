@@ -84,7 +84,7 @@ public class EnvironmentManager
             {
                 try
                 {
-                    if (shelt.isActive && waterRegister[i] != null &&waterRegister[i].activeInHierarchy)
+                    if (shelt.isActive && waterRegister[i] != null && waterRegister[i].activeInHierarchy)
                         shelt.looseHP = CheckCollision(shelt, waterRegister[i]);
                 }
                 catch (Exception e)
@@ -92,7 +92,7 @@ public class EnvironmentManager
                     Debug.Log(e.ToString());
                 }
             }
-            if (waterRegister[i] == null || waterRegister[i].transform.position.y < -60f)
+            if (waterRegister[i] == null || waterRegister[i].transform.position.y < -20f)
             {
                 if(waterRegister[i]!= null)
                     GameObject.Destroy(waterRegister[i]);
@@ -118,9 +118,9 @@ public class EnvironmentManager
 
     private bool CheckCollision(Shelt shelt, GameObject water)
     {
-        return shelt.shelt.transform.position.x < water.transform.position.x + .05 &&
-               shelt.shelt.transform.position.x + .35 > water.transform.position.x &&
-               shelt.shelt.transform.position.y < water.transform.position.y + .3 &&
+        return shelt.shelt.transform.position.x - .5 < water.transform.position.x + .1 &&
+               shelt.shelt.transform.position.x + .5 > water.transform.position.x &&
+               shelt.shelt.transform.position.y - .35 < water.transform.position.y + 1 &&
                .35 + shelt.shelt.transform.position.y > water.transform.position.y;
 
     }

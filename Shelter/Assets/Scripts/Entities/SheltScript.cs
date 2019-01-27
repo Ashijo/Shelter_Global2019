@@ -15,9 +15,13 @@ public class SheltScript : MonoBehaviour
     {
         if (col.transform.CompareTag("Shelt") || col.transform.CompareTag("Obstacle"))
         {
-            //Debug.Log("ShellCollid");
-            myShelt.Turn();
-            myShelt.rush = false;
+
+            if (col.transform.CompareTag("Shelt") || (col.GetContact(0).point.y.Near(gameObject.transform.position.y + .35f, .05f) !=
+                col.GetContact(0).point.x.Near(gameObject.transform.position.x + .35f, .05f))) {
+
+                myShelt.Turn();
+                myShelt.rush = false;
+            }
         }
 
         if (col.transform.CompareTag("Shelter"))

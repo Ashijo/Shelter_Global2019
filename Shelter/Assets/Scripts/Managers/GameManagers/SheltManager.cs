@@ -31,7 +31,7 @@ public class SheltManager
     private Timer sheltSpwanerTimer;
     private Timer.toCall spawnCall;
     private int spawned;
-    private List<Shelt> shelts;
+    public List<Shelt> shelts { get; private set; }
     private GameObject spawn;
     private GameObject MotherShelt;
     private Shelt selectedOne;
@@ -159,8 +159,11 @@ public class SheltManager
 
         if (SaveShelt + DeadShelt == GV.Instance.sheltToSpawn)
         {
-            //TODO end game
-            Debug.Log("END GAME");
+            if (SaveShelt >= GV.Instance.SheltToSave)
+            {
+                //TODO GoodEnding
+            }
+            //TODO bad ending
         }
     }
 

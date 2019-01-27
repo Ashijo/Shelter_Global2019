@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shelt
 {
-    private GameObject shelt;
+    public GameObject shelt;
     private float lifePoint;
     private Color color;
     private bool direction = true;
@@ -41,8 +41,18 @@ public class Shelt
     public void Up(float dt)
     {
         Vector3 pos = shelt.transform.position;
-        pos.x += dt * (rush ? GV.Instance.SheltMaxSpeed : GV.Instance.SheltNormalSpeed ) * (direction ? 1f : -1f);
-        shelt.transform.position = pos;
+
+        if (pos.y < -6f)
+        {
+            SheltManager.Instance.KillMe(this);
+            return;
+        }
+
+        if (!fall)
+        {
+            pos.x += dt * (rush ? GV.Instance.SheltMaxSpeed : GV.Instance.SheltNormalSpeed) * (direction ? 1f : -1f);
+            shelt.transform.position = pos;
+        }
 
         if (rush)
         {
@@ -55,10 +65,11 @@ public class Shelt
         if (looseHP)
         {
             lifePoint -= dt * GV.Instance.deathSpeed;
+            Debug.Log(lifePoint);
             CheckLife();
         }
 
-        if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -0.1f))
+        if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -0.5f))
         {
             onFallOut = true;
             onFallEnter = true;
@@ -66,7 +77,7 @@ public class Shelt
             onFallOutFirst = true;
         }
         else
-            fall = shelt.GetComponent<Rigidbody2D>().velocity.y < -0.1f;
+            fall = shelt.GetComponent<Rigidbody2D>().velocity.y < -0.5f;
 
         timeSinceLastSprt += dt;
 
@@ -135,6 +146,7 @@ public class Shelt
 
     private void IDie()
     {
+        SheltManager.Instance.KillMe(this);
     }
 
     public void RushTo(Vector3 position)

@@ -50,12 +50,19 @@ public class MasterGameManager
         EnvironmentManager.Instance.Start();
     }
 
+    public void Finish()
+    {
+        //endImg.SetActive(true);
+    }
+
     public void Update(InputParams _ip, float dt)
     {
         
         if (_ip.EscapePressed)
         {
             endGame = false;
+            endImg.SetActive(true);
+
             SceneManager.InitToCall init = SwitchToMenu;
             SceneManager.Instance.LoadScene(GV.SCENENAMES.MainMenu.ToString(), init);
         }

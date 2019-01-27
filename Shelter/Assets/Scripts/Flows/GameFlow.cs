@@ -6,6 +6,7 @@ public class GameFlow : Flow
 {
     public override void Finish()
     {
+        MasterGameManager.Instance.Finish();
     }
 
     public override void FixedUpdateFlow(float _fdt)

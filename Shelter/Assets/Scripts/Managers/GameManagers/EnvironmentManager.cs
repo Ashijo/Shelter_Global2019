@@ -92,7 +92,7 @@ public class EnvironmentManager
                     Debug.Log(e.ToString());
                 }
             }
-            if (waterRegister[i] == null || waterRegister[i].transform.position.y < -6f)
+            if (waterRegister[i] == null || waterRegister[i].transform.position.y < -60f)
             {
                 if(waterRegister[i]!= null)
                     GameObject.Destroy(waterRegister[i]);

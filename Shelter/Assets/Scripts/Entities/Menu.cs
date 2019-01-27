@@ -11,6 +11,8 @@ public class Menu : MonoBehaviour
     }
 
     public void GoToGame() {
+        SoundManager.Instance.PlayExplosion();
+
         SceneManager.InitToCall initFlow = SwitchToGame;
         SceneManager.Instance.LoadScene(GV.SCENENAMES.GameScene.ToString(), initFlow);
     }

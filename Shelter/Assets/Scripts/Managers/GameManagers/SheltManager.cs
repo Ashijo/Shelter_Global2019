@@ -173,6 +173,7 @@ public class SheltManager
 
     public void KillMe(Shelt toKill)
     {
+        SoundManager.Instance.PlayExplosion();
         DeadShelt++;
         toKill.DeActivate();
         CheckGameState();

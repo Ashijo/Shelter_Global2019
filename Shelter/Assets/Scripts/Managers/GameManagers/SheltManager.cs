@@ -71,7 +71,7 @@ public class SheltManager
     private void TryToSelect(Vector3 mousePos)
     {
 
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero);
         if (hit.collider != null)
         {
             if(hit.collider.gameObject.transform.CompareTag("Shelt"))
@@ -82,6 +82,17 @@ public class SheltManager
             }
         }
         
+    }
+
+    private void RightClick(Vector3 mousePos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero);
+        if (hit.collider != null)
+        {
+            if (hit.collider.gameObject.transform.CompareTag("Shelt"))
+                hit.collider.gameObject.GetComponent<SheltScript>().myShelt.Jump();
+          
+        }
     }
 
     private void Deselect()
@@ -130,6 +141,11 @@ public class SheltManager
             TryToSelect(_ip.MousePos);
         }
 
+        if (_ip.ClickRightDown)
+        {
+            RightClick(_ip.MousePos);
+        }
+
         if (_ip.ClickLeftUp && selectedOne != null)
         {
             Deselect();
@@ -138,6 +154,14 @@ public class SheltManager
 
     public void FixedUpdate(float fdt)
     {
+        if (!MasterGameManager.Instance.TimeStop)
+        {
+            foreach (Shelt shelt in shelts)
+            {
+                if (shelt.isActive)
+                    shelt.FixedUpdate(fdt);
+            }
+        }
     }
 
     public void SaveMe(Shelt toSave)

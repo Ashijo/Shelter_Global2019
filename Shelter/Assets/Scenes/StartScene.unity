@@ -236,6 +236,15 @@ MonoBehaviour:
   - {fileID: 21300016, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
   - {fileID: 21300018, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
   - {fileID: 21300020, guid: fdf09b3b707e8b249898662a6c61555e, type: 3}
+  jump:
+  - {fileID: 21300000, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300002, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300004, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300006, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300008, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300010, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300012, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
+  - {fileID: 21300014, guid: 47e8f8ab155aaa74b9ce9e1aba7c6769, type: 3}
   winScreen:
   - {fileID: 21300000, guid: 45f8e96479f7e174782df63f3a99ef8c, type: 3}
   - {fileID: 21300000, guid: 19b33abb314b54642a1e39c49a29eaf6, type: 3}

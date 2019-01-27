@@ -12,6 +12,7 @@ public class WS : MonoBehaviour
     public Sprite[] recover;
     public Sprite[] shadow;
     public Sprite[] die;
+    public Sprite[] jump;
 
     public Sprite[] winScreen;
     public Sprite[] looseScreen;

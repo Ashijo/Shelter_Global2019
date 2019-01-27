@@ -37,6 +37,8 @@ public class MasterGameManager
     private bool switcher;
     private float timeSinceLastSwitch;
 
+    private Vector3 camPos;
+
     public void Start()
     {
         //Debug.Log("MasterGameManager start");
@@ -50,7 +52,7 @@ public class MasterGameManager
 
     public void Update(InputParams _ip, float dt)
     {
-
+        
         if (_ip.EscapePressed)
         {
             endGame = false;
@@ -72,6 +74,23 @@ public class MasterGameManager
             }
 
             return;
+        }
+
+        if (_ip.APress || _ip.DPress)
+        {
+            if (_ip.APress && Camera.main.transform.position.x > 0)
+            {
+                camPos = Camera.main.transform.position;
+                camPos.x -= dt * GV.Instance.CamSpeed;
+                Camera.main.transform.position = camPos;
+            }
+
+            if (_ip.DPress && Camera.main.transform.position.x < GV.Instance.MaxXposCam)
+            {
+                camPos = Camera.main.transform.position;
+                camPos.x += dt * GV.Instance.CamSpeed;
+                Camera.main.transform.position = camPos;
+            }
         }
 
         SheltManager.Instance.Update(_ip, dt);

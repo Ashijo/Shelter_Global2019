@@ -23,7 +23,11 @@ public class Shelt
     private int spriteCurs;
     private float timeSinceLastSprt;
 
+    private bool jumpTrigger = false;
+    private bool inJump = false;
+
     public bool looseHP = false;
+    private Vector3 pos;
 
     public bool isActive { get; private set; }
 
@@ -39,6 +43,23 @@ public class Shelt
         shelt.AddComponent<SheltScript>();
         shelt.GetComponent<SheltScript>().Init(this);
         color = Color.white;
+    }
+
+    public void Jump()
+    {
+        jumpTrigger = true;
+        inJump = true;
+    }
+
+    public void FixedUpdate(float _fdt)
+    {
+        if (jumpTrigger)
+        {
+            timeSinceLastSprt = 0;
+            spriteCurs = 0;
+            jumpTrigger = false;
+            shelt.GetComponent<Rigidbody2D>().AddForce(new Vector2( (direction ? .8f : -.8f) * GV.Instance.jumpForce, GV.Instance.jumpForce * 1.5f), ForceMode2D.Impulse);
+        }
     }
 
     public void Up(float dt)
@@ -69,12 +90,38 @@ public class Shelt
             return;
         }
 
-        Vector3 pos = shelt.transform.position;
+        pos = shelt.transform.position;
+
+        if (looseHP)
+        {
+            lifePoint -= dt * GV.Instance.deathSpeed;
+            CheckLife();
+        }
 
         if (pos.y < -6f)
         {
             SheltManager.Instance.KillMe(this);
             DeActivate();
+            return;
+        }
+
+        if (inJump)
+        {
+            if (timeSinceLastSprt >= GV.Instance.timeBetwenSprt)
+            {
+                timeSinceLastSprt = 0;
+                shelt.GetComponent<SpriteRenderer>().sprite = GV.ws.jump[spriteCurs];
+            }
+
+            shelt.GetComponent<SpriteRenderer>().flipX = !direction;
+            spriteCurs++;
+
+            if (spriteCurs >= GV.ws.jump.Length)
+            {
+                inJump = false;
+                spriteCurs = 0;
+            }
+
             return;
         }
 
@@ -92,13 +139,7 @@ public class Shelt
             }
         }
 
-        if (looseHP)
-        {
-            lifePoint -= dt * GV.Instance.deathSpeed;
-            Debug.Log(lifePoint);
-            CheckLife();
-        }
-
+       
         if (fall && !(shelt.GetComponent<Rigidbody2D>().velocity.y < -1f))
         {
             onFallOut = true;

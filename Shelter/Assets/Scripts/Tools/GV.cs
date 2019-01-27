@@ -29,7 +29,7 @@ public class GV {
     public enum SCENENAMES { DUMMY, MainMenu, StartScene, GameScene}
    
     public readonly int timeBetwenSheltSpawn = 5;
-    public readonly int sheltToSpawn = 2;
+    public readonly int sheltToSpawn = 12;
     public readonly float SheltNormalSpeed = 1f;
     public readonly float SheltMaxSpeed = 2f;
 
@@ -37,6 +37,6 @@ public class GV {
     public readonly float timeBetwenRushSprt = (1f / 26f);
 
     public readonly float deathSpeed = 7.5f;
-    public readonly int SheltToSave = 2;
+    public readonly int SheltToSave = 8;
 
 }

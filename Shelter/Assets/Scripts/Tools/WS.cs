@@ -15,5 +15,7 @@ public class WS : MonoBehaviour
 
     public Sprite[] winScreen;
     public Sprite[] looseScreen;
+
+    public Sprite[] house;
 }
 

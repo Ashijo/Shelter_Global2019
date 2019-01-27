@@ -32,6 +32,7 @@ public class EnvironmentManager
 
     private List<GameObject> waterSpawners;
     private List<GameObject> waterRegister;
+    private List<ShelterScript> shelters;
     private GameObject WaterMother;
     public void Start()
     {
@@ -59,6 +60,14 @@ public class EnvironmentManager
         }
 
         newWater.transform.SetParent(WaterMother.transform);
+    }
+
+    public void RegisterShelter(ShelterScript toRegister)
+    {
+        if (shelters == null)
+        {
+            shelters = new List<ShelterScript>();
+        }
     }
 
     // Update is called once per frame
@@ -96,6 +105,15 @@ public class EnvironmentManager
 
     public void FixedUpdate(float fdt)
     {
+    }
+
+    public void Finish()
+    {
+        foreach (ShelterScript shelter in shelters)
+        {
+            shelter.ResetImg();
+        }
+
     }
 
     private bool CheckCollision(Shelt shelt, GameObject water)

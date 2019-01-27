@@ -242,6 +242,9 @@ MonoBehaviour:
   looseScreen:
   - {fileID: 21300000, guid: cad9b81748678304e90e82045fe2ba22, type: 3}
   - {fileID: 21300000, guid: 7d89313c0eb995b4cbe8663bf28ef5c9, type: 3}
+  house:
+  - {fileID: 21300000, guid: 305a3c4865c4f9d46a9ca187f8caf949, type: 3}
+  - {fileID: 21300000, guid: ba1d4febe97214648bf6a697d6e32f3f, type: 3}
 --- !u!114 &160006723
 MonoBehaviour:
   m_ObjectHideFlags: 0
